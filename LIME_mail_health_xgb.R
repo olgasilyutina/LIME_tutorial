@@ -5,8 +5,8 @@ library(readr)
 library(lime)
 
 #Загружаем данные с тестовой и тренировочной выборкой
-X_test <- read_csv("/students/oyasilyutina/X_test.csv")
-X_train <- read_csv("/students/oyasilyutina/X_train.csv")
+X_test <- read_csv("/students/oyasilyutina/LIME_tutorial/X_test.csv")
+X_train <- read_csv("/students/oyasilyutina/LIME_tutorial/X_train.csv")
 
 #Приводим целевую переменную к классу character
 X_test$type <- as.character(X_test$type)
