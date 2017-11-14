@@ -5,9 +5,9 @@ library(dplyr)
 
 #Работаем с датасетом housing, который заранее разделили на тестовую и тренировочную выборки
 #Загружаем тестовую, тренировочную выборки и датасет с целевой переменной для тренировочной выборки
-test <- read_csv("/students/oyasilyutina/test.csv")
-train <- read_csv("/students/oyasilyutina/train.csv")
-target <- read_csv("/students/oyasilyutina/target.csv")
+test <- read_csv("/students/oyasilyutina/LIME_tutorial/test.csv")
+train <- read_csv("/students/oyasilyutina/LIME_tutorial/train.csv")
+target <- read_csv("/students/oyasilyutina/LIME_tutorial/target.csv")
 
 #Создаем вектор с целевой переменной
 target <- target[[1]]
