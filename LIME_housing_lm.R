@@ -19,14 +19,12 @@ train <- as.data.frame(train)
 #Прогоняем модель линейной регрессии
 model <- train(train, target, method = 'lm')
 
-pred <- predict(test, model)
-
 #Создаем объект для объянения работы модели
 explainer <- lime(train, model)
 class(explainer)
 
 #Объясняем наблюдения из тестовой выборки
-explanation <- explain(test[26,], explainer, n_features = 3)
+explanation <- lime::explain(test[26,], explainer, n_features = 3)
 
 #Визуализируем получившееся объяснение
 plot_features(explanation)
